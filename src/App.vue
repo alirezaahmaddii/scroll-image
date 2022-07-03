@@ -2,8 +2,7 @@
   <div class="container">
     <article class=" content  ">
       <div class="container">
-        <section></section>
-        <section>
+        <section class="slow">
           <div class="d-flex cart-items text-items show-text" style="background: #ffffff" >
             <div class="d-flex flex-column">
               <p><strong>The history of pizza begins in antiquity, when various ancient cultures produced flatbreads with
@@ -30,7 +29,7 @@
                  class="inline-photo show-on-scroll">
           </figure>
         </section>
-        <section>
+        <section class="slow">
           <div class="d-flex cart-items show-text" style="background: #ffffff" >
             <div class="d-flex flex-column">
               <h2>Make an Italian pizza</h2>
@@ -223,7 +222,7 @@ article {
     opacity: 1;
     transition: 0.6s all ease-in-out;
     //transform: rotateZ(0deg);
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
 
   header {
@@ -266,33 +265,34 @@ article {
     left: 5vmin;
   }
 
-  section {
+   section {
     width: calc(50% + 1px);
-    height: 100vh;
-    margin: 0 0 0 auto;
+    height: 65vh;
+    margin-left: auto;
     position: sticky;
     top: 0;
     overflow: hidden;
-    padding: 5vmin;
+    padding: 6vmin;
   }
 
-  section:nth-of-type(1) {
-    margin: 0 0 10vh 0;
-    width: 50%;
-  }
-
-  figure:nth-of-type(2n) {
-    margin: 0 0 10vh auto;
-  }
-
-  section:nth-of-type(2n) {
+  //section:nth-of-type(1) {
+    //margin: 0 0 10vh 0;
+    //width: 50%;
+  //}
+  //
+  //figure:nth-of-type(2n) {
+  //  margin: 0 0 10vh auto;
+  //}
+  //
+  section:nth-of-type(2n+1) {
     margin: 0 auto 0 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
   }
-
-  figure:last-of-type,
-  section:last-of-type {
-    margin-bottom: 0;
-  }
+  //figure:last-of-type,
+  //section:last-of-type {
+  //  margin-bottom: 0;
+  //}
 
   figure img {
     min-width: 100%;
@@ -311,28 +311,32 @@ article {
 
 }
 .cart-items{
-  background: #ffffff ;
-  height: 66vh ;
-  border-radius: 10px ;
-  border: 1px solid #837d7d ;
-  box-shadow: 0px 3px 12px #6a6464 ;
-  padding: 51px 53px ;
-  opacity: 0;
+  background: #ffffff;
+  height: 56vh;
+  border-radius: 10px;
+  border: 1px solid #837d7d;
+  box-shadow: 0px 3px 12px #6a6464;
+  padding: 29px 53px;
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
 
 }
-.card-items{
-  background: #ffffff ;
-  height: 66vh ;
-  border-radius: 10px ;
-  border: 1px solid #837d7d ;
-  box-shadow: 0px 3px 12px #6a6464 ;
-  padding: 51px 53px ;
-transition: 0.4s all ease-in-out;
-  opacity: 0;
+.card-items {
+  background: #ffffff;
+  height: 56vh;
+  border-radius: 10px;
+  border: 1px solid #837d7d;
+  box-shadow: 0px 3px 12px #6a6464;
+  padding: 29px 53px;
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
 }
 .show-text{
   opacity: 1;
   transition: 0.4s all ease-in-out;
 
+}
+.slow{
+  transition: 0.3s all ease-in-out;
 }
 </style>
