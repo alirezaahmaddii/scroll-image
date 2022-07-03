@@ -317,7 +317,7 @@ article {
   border: 1px solid #837d7d;
   box-shadow: 0px 3px 12px #6a6464;
   padding: 29px 53px;
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s all ease-in-out;
 
 }
@@ -328,7 +328,7 @@ article {
   border: 1px solid #837d7d;
   box-shadow: 0px 3px 12px #6a6464;
   padding: 29px 53px;
-  opacity: 1;
+  opacity: 0;
   transition: 0.5s all ease-in-out;
 }
 .show-text{
