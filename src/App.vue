@@ -130,7 +130,7 @@ import 'gsap/ScrollToPlugin';
 export default {
   data: () => ({}),
   methods: {
-    scr() {
+    scroll() {
       // Detect request animation frame
       let scroll = window.requestAnimationFrame ||
           // IE Fallback
@@ -184,7 +184,7 @@ export default {
     },
   },
   mounted() {
-    this.scr();
+    this.scroll();
   }
 
 }
